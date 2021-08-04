@@ -94,6 +94,9 @@ public class moviesPage extends Application{
             } catch (SQLException ex) {
                 Logger.getLogger(SystemMethods.class.getName()).log(Level.SEVERE, null, ex);
             }
+            
+            combo2.getItems().clear();
+            registeredMovies.clear();
         };
         
         combo1.setOnMouseClicked(fetchGenres);
